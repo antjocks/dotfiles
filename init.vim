@@ -30,8 +30,10 @@ call plug#end()
 
 
 let g:deoplete#enable_at_startup = 1
-
-
+"disabling autcomplete, deoplete is used for completion
+let g:jedi#completions_enabled = 0
+"open the go-to function in split, not another buffer
+let g:jedi#use_splits_not_buffers = "right"
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 let g:neomake_python_enabled_makers = ['pylint']
