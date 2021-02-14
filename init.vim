@@ -28,6 +28,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
+set number
 
 let g:deoplete#enable_at_startup = 1
 "disabling autcomplete, deoplete is used for completion
